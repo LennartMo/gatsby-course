@@ -23,7 +23,13 @@ const Layout = ({ children }) => (
             `} 
         />
         <header></header>
-        <main>{children}</main>
+        <main
+            css={css`
+                margin: 2rem auto 4rem;
+                max-width: 90vw;
+                width: 550px;
+            `}
+        >{children}</main>
     </>
 );
 
